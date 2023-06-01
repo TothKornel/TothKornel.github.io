@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,70 +9,108 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NMPQFPK');</script>
 <!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    
+  <meta charset="UTF-8">
+  <title>TITLE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
 
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .left-paragraph,
+    .right-paragraph {
+      width: 45%;
+    }
+
+    .left-image,
+    .right-image {
+      width: 45%;
+      max-height: 300px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .button a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: #337ab7;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button a:hover {
+      background-color: #23527c;
+    }
+
+    .last-paragraph {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
 <body>
+    
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMPQFPK"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+  <h1>TITLE</h1>
 
-    <main>
-        <section>
-            <h1>Welcome to My Static Website</h1>
-            <p>This is a sample static website.</p>
-        </section>
+  <div class="container">
+    <div class="left-paragraph">
+      <p>
+        <!-- First paragraph content here -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nisi ut turpis malesuada, nec pellentesque ligula semper. Nulla facilisi. Proin id magna vel lacus iaculis vestibulum. Vestibulum in luctus lorem. Donec tempus faucibus felis non rutrum. Suspendisse semper ultrices urna. Nullam nec lorem condimentum, luctus nibh in, pellentesque odio. Integer vel urna sed est posuere pretium id et odio. Cras sollicitudin varius est. Sed aliquam ultricies quam. Aliquam erat volutpat.
+      </p>
+    </div>
 
-        <section>
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut enim nec nunc interdum pharetra.
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
-                fermentum mauris lacus, id laoreet lectus lobortis nec. Duis ut ante maximus, lobortis metus eu,
-                vehicula metus.</p>
-        </section>
+    <div class="right-image">
+      <img src="path/to/your-image1.jpg" alt="Image 1">
+    </div>
+  </div>
 
-        <section>
-            <h2>Services</h2>
-            <ul>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>SEO</li>
-            </ul>
-        </section>
+  <div class="container">
+    <div class="right-paragraph">
+      <p>
+        <!-- Second paragraph content here -->
+        Sed vitae leo odio. Mauris sed rhoncus ante. Ut tempus tincidunt felis, id auctor dui vestibulum a. Duis accumsan tortor at velit condimentum finibus. Nam et elementum elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vestibulum commodo urna, vitae lacinia elit consectetur non. Sed a dui sit amet nunc suscipit elementum. Quisque id ullamcorper neque. Ut nec scelerisque turpis.
+      </p>
+    </div>
 
-        <section>
-            <h2>Contact</h2>
-            <p>For inquiries, please fill out the form below:</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+    <div class="left-image">
+      <img src="path/to/your-image2.jpg" alt="Image 2">
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2023 My Static Website. All rights reserved.</p>
-    </footer>
+  <div class="button">
+    <a href="#">BUTTON</a>
+  </div>
 
+  <p class="last-paragraph">
+    <!-- Last paragraph content here -->
+    Vestibulum sit amet lacus vel mauris venenatis viverra. Donec suscipit tortor a massa consectetur, id pharetra ligula sagittis. Nam tincidunt rutrum tortor, eget tincidunt mauris luctus eu. Nulla facilisi. Aliquam ac nibh id nisi bibendum eleifend nec sit amet nisi. Mauris ultrices nibh sed vulputate congue. Curabitur sagittis orci eget consectetur finibus. Integer euismod velit vel felis vestibulum, non vestibulum ante varius. Vestibulum vitae metus quis est rutrum sagittis. Donec non facilisis odio, a blandit enim.
+  </p>
 </body>
-
 </html>
